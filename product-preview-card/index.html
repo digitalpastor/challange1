@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap"
+    rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Product preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    body {
+      background-color: hsl(30, 38%, 92%);
+
+    }
+
+    .Grid {
+      display: flex;
+      flex-direction: column;
+
+    }
+
+    .Grid .grid-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      width: 60%;
+      background-color: #fff;
+      border-radius: 15px;
+      overflow: hidden;
+      position: absolute;
+      width: 50%;
+      left: 25%;
+      top: 25%
+    }
+
+
+    .Grid .grid-container .grid-item img {
+      width: 275px;
+      position: absolute;
+
+
+    }
+
+    h2 {
+      /*Gabrielle essence*/
+      font-family: 'Fraunces', serif;
+      font-weight: 700;
+    }
+
+    .perfume {
+      /*Perfume*/
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
+      text-transform: uppercase;
+      font-size: small;
+      letter-spacing: 1px;
+
+
+    }
+
+    p {
+      /*paragraph text-A floral sola*/
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
+      font-size: 14px;
+
+    }
+
+
+
+    .amount {
+      display: flex;
+      gap: 30px;
+      align-items: center;
+      margin-bottom: 30px;
+      font-family: 'Fraunces', serif;
+    }
+
+    .amount .p1 {
+      color: hsl(158, 36%, 37%);
+    }
+
+    .amount .p2 {
+      color: hsl(228, 12%, 48%);
+      text-decoration: line-through;
+    }
+
+    
+    .button:hover {
+      background-color: hsl(212, 21%, 14%);
+    }
+    .button{
+      display: flex;
+      padding: 20px 20px;
+      background-color: hsl(158, 36%, 37%) ;
+      outline: none;
+      border-radius: 15px;
+      margin-left: 60px;
+      font-family: 'Montserrat', sans-serif;
+      
+      
+    }
+
+    
+  </style>
+</head>
+
+<body>
+  <div class="Grid">
+    <div class="grid-container">
+      <div class="grid-item">
+        <img src="images/image-product-desktop.jpg" alt="image">
+      </div>
+
+      <div class="grid-item">
+        <p class="perfume">Perfume</p>
+
+        <h2> Gabrielle<br> Essence Eau<br> De Parfum</h2>
+
+        <p> A floral, solar and voluptuous<br> interpretation composed by<br> Olivier Polge,
+          Perfumer-Creator <br>for the House of CHANEL.</p>
+
+        <div class="amount">
+          <h1 class="p1"> $149.99</h1>
+          <p class="p2">$169.99</p>
+        </div>
+       
+          <button class="button">
+            <img src="images/icon-cart.svg" alt="cart" style="width: 15px; height: 16px;"> Add to cart
+          </button>
+
+      </div>
+    </div>
+
+<div class="attribution">
+  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+  Coded by <a href="#">Adodo Godwin Osabouhien</a>.
+</div>
+</body>
+
+</html>
